@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 import { AuthProvider } from './hook/useAuth';
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
