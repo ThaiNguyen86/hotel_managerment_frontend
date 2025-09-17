@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'http://localhost:4000/';
+const baseURL = 'https://hotel-app-be-thanhthai.project3cloudinus.shop';
 const instance = axios.create({
     baseURL: baseURL,
     headers: {
