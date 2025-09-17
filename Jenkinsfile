@@ -34,7 +34,7 @@ pipeline {
                   docker pull ${DOCKER_IMAGE}:${BUILD_NUMBER}
                   docker stop hotel_frontend || true
                   docker rm hotel_frontend || true
-                  docker run -d --name hotel_frontend -p 3001:4000 ${DOCKER_IMAGE}:${BUILD_NUMBER}
+                  docker run -d --name hotel_frontend -p 3001:3000 ${DOCKER_IMAGE}:${BUILD_NUMBER}
                 '''
             }
         }
