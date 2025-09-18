@@ -41,4 +41,3 @@ pipeline {
     }
 }
 
-// Compare this snippet from hotel-managerment-backend/Jenkinsfile:
