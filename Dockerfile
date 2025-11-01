@@ -2,12 +2,10 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
-
-RUN npm install -g http-server
-
 COPY . .
 
-EXPOSE 8080
+RUN npm install
 
-CMD ["http-server", "-p", "2048"]
+EXPOSE 3000
+
+CMD ["npm", "start"]
