@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://hotel-app-be-thanhthai.project3cloudinus.shop';
+const baseURL = process.env.REACT_APP_BASE_URL;
 const instance = axios.create({
     baseURL: baseURL,
     headers: {
